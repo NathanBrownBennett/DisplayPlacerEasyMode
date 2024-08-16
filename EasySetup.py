@@ -41,7 +41,7 @@ def parse_displayplacer_output(result):
 
 def generate_displayplacer_command(display):
     for display in display:
-        command = f'displayplacer ' + '"' + f"id:{display["Persistent screen id"]} res:{display["Resolution"]} color_depth:{display["Color Depth"]} enabled:true scaling:{display["Scaling"]} origin:{display["Origin"]} degree:{display["Rotation"]}" + '"' +''
+        command = f'displayplacer "id:{display["Persistent screen id"]} res:{display["Resolution"]} color_depth:{display["Color Depth"]} enabled:true scaling:{display["Scaling"]} origin:{display["Origin"]} degree:{display["Rotation"]}"'
     return command
 
 def display_settings_shell(displays):
